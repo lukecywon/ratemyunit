@@ -9,6 +9,8 @@
   height: 20em;
   width: 20em;
   padding: 0;
+  display: block;
+  margin: 0 auto;
   will-change: filter;
   transition: filter 300ms;
 }
