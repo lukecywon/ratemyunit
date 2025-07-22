@@ -140,48 +140,56 @@
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     h2 {
       font-size: var(--text-xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     h3 {
       font-size: var(--text-lg);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     h4 {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     p {
       font-size: var(--text-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     label {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     button {
       font-size: var(--text-base);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
 
     input {
       font-size: var(--text-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
+      font-family: var(--font-mono), ui-monospace;
     }
   }
 }
