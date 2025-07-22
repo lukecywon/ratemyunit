@@ -12,6 +12,5 @@ createRoot(document.getElementById('root')!).render(
                 </Route>
             </Routes>
         </BrowserRouter>
-        <App />
     </>,
 )
