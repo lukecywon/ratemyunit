@@ -4,6 +4,7 @@ import './styles/App.css'
 import Button from "./components/Button.tsx";
 
 function App() {
+    console.log("Rendering App")
     return (
       <>
           <div>
