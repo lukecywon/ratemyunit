@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/index.css'
-import Home from "./pages/Home.tsx";
+import Home from "./pages/Landing.tsx";
 
 createRoot(document.getElementById('root')!).render(
     <>
