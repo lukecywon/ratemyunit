@@ -7,7 +7,7 @@ function App() {
     return (
       <>
           <div>
-              <a href="https://react.dev" target="_blank">
+              <a href="https://ratemyunit.me/" target="_blank">
                   <img src={rateMyUnitLogo} className="logo" alt="Rate My Unit logo"/>
               </a>
           </div>
