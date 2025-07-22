@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import rateMyUnitLogo from './assets/logo-default.svg'
 import './styles/App.css'
+import Button from "./components/Button.tsx";
 
 function App() {
     return (
@@ -15,12 +16,13 @@ function App() {
               <h1>Welcome to Rate My Unit</h1>
           </b>
           <div className="card flex justify-center gap-10">
-              <button onClick={() => {}}>
+              {/*add onclick functionality later*/}
+              <Button onClick={() => {}}>
                   Sign up
-              </button>
-              <button onClick={() => {}}>
+              </Button>
+              <Button onClick={() => {}}>
                   Log in
-              </button>
+              </Button>
           </div>
           <div>
               <p>
