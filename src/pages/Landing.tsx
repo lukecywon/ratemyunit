@@ -14,7 +14,7 @@ function Home() {
             <div className="h-screen">
                 <div className="background flex flex-col lg:flex-row h-full items-center justify-center">
                     <div className="flex relative justify-center items-center basis-1/2 h-full p-3 gap-2 pr-20">
-                        <img src={rateMyUnitLogo} className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-60 lg:h-60 p-3" alt="Rate My Unit logo"/>
+                        <img src={rateMyUnitLogo} className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-60 lg:h-60 drop-shadow-2xl" alt="Rate My Unit logo"/>
                         <div className="flex flex-col gap-4 p-10">
                             <Typewriter text="ratemyunit" speed={350} className="font-mono text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-black relative" />
                             <div className="font-mono mt-4">
