@@ -22,7 +22,7 @@ const SearchBar: React.FC<SearchBarProps> = ({placeholder = 'Search units or rev
             <div className="relative w-full">
                 <input
                     placeholder={ placeholder }
-                    className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-full transition-all focus:w-full outline-none h-20 text-2xl bg-white/70 hover:bg-white focus:bg-white"
+                    className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-full transition-all focus:w-full outline-none h-20 text-2xl bg-white/70 hover:bg-white focus:bg-white text-gray-500 font-mono"
                     name="search"
                     type="search"
                     onChange={ handleChange }
