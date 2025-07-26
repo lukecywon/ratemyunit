@@ -18,7 +18,7 @@ const SearchBar: React.FC<SearchBarProps> = ({placeholder = 'Search units or rev
     }
 
     return (
-        <form onSubmit={handleSubmit} className="search-bar flex items-center">
+        <form onSubmit={handleSubmit} className="flex items-center">
             <div className="relative w-full">
                 <input
                     placeholder={ placeholder }
