@@ -3,17 +3,10 @@ import Typewriter from "../components/Typewriter.tsx";
 import Button from "../components/Button.tsx";
 import '../styles/landing.css';
 import SearchBar from "../components/Search.tsx";
-import { useNavigate } from 'react-router-dom';
 
-
-function Home() {
+function MainPage() {
     const handleSearch = (query: string) => {
         console.log('Searching for units or reviews:', query);
-    };
-
-    const navigate = useNavigate();
-    const goToMainPage = () => {
-        navigate('/main');
     };
 
     return (
@@ -37,7 +30,7 @@ function Home() {
                         <SearchBar onSearch={handleSearch} placeholder="Search units or reviews..."/>
                     </div>
                     <div className="absolute top-5 right-4 flex gap-4">
-                        <Button onClick={goToMainPage}>
+                        <Button onClick={() => {}}>
                             Sign up
                         </Button>
                         <Button onClick={() => {}}>
@@ -49,4 +42,4 @@ function Home() {
         </>
     )
 }
-export default Home;
+export default MainPage;
