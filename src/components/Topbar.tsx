@@ -6,6 +6,10 @@ import Button from "./Button.tsx";
 interface TopbarProps {
 }
 
+const handleSearch = (query: string) => {
+    console.log('Searching for units or reviews:', query);
+};
+
 const Topbar: React.FC<TopbarProps> = ({}) => {
     return (
         <header className="flex flex-row absolute top-0 w-full h-20 border-b bg-card shadow-sm">
@@ -24,7 +28,7 @@ const Topbar: React.FC<TopbarProps> = ({}) => {
 
                     <div className="flex max-w-md mx-8">
                         <div className="relative">
-                            <SmallSearchBar className="rounded-lg h-10 sm:h-12 text-md sm:text-lg"/>
+                            <SmallSearchBar onSearch={handleSearch} className="rounded-lg h-10 sm:h-12 text-md sm:text-lg"/>
                         </div>
                     </div>
 

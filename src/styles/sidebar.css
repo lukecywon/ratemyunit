@@ -1,0 +1,48 @@
+/*.sidebar {*/
+/*    width: 220px;*/
+/*    background-color: #2d2d2d;*/
+/*    color: white;*/
+/*    padding: 16px;*/
+/*    height: 100vh;*/
+/*}*/
+
+/*.sidebar-header {*/
+/*    margin-bottom: 250px;*/
+/*}*/
+
+/*.sidebar-header h1 {*/
+/*    font-size: 18px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.dropdown {*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.dropdown-btn {*/
+/*    width: 100%;*/
+/*    background: none;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    font-size: 16px;*/
+/*    text-align: left;*/
+/*    padding: 8px 0;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.dropdown-content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    margin-left: 10px;*/
+/*    margin-top: 4px;*/
+/*}*/
+
+/*.dropdown-content a {*/
+/*    color: #ccc;*/
+/*    text-decoration: none;*/
+/*    padding: 4px 0;*/
+/*}*/
+
+/*.dropdown-content a:hover {*/
+/*    color: white;*/
+/*}*/
