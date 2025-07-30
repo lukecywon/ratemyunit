@@ -33,7 +33,7 @@ const Topbar: React.FC<TopbarProps> = ({}) => {
 
                     <div className="flex items-center gap-4">
                         <button className="">
-                            <span className="material-icons size-2/3">account_circle</span> Log in
+                            <span className="material-icons size-2/3">account_circle</span> <span className="hidden md:block">Log in</span>
                         </button>
                     </div>
 
