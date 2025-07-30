@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "./Logo.tsx";
 import SmallSearchBar from "./SmallSearchBar.tsx";
-import Button from "./Button.tsx";
 
 interface TopbarProps {
 }
@@ -12,17 +11,17 @@ const handleSearch = (query: string) => {
 
 const Topbar: React.FC<TopbarProps> = ({}) => {
     return (
-        <header className="flex flex-row absolute top-0 w-full h-20 border-b bg-card shadow-sm">
+        <header className="flex flex-row absolute top-0 w-full h-22 border-b bg-card shadow-sm">
             <div className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
 
                     <div className="flex items-center gap-3">
-                        <div className="flex items-center justify-center w-12 h-12 bg-primary rounded-lg">
+                        <div className="flex items-center justify-center md:w-12 md:h-12 bg-primary rounded-lg">
                             <Logo />
                         </div>
                         <div>
-                            <h1 className="text-xl font-medium text-foreground font-serif">Rate My Unit</h1>
-                            <p className="text-sm text-muted-foreground font-mono">University Unit Reviews</p>
+                            <h1 className="hidden md:block md:text-xl font-medium text-foreground font-serif">ratemyunit</h1>
+                            <p className="hidden md:block md:text-sm text-muted-foreground font-mono">University Unit Reviews</p>
                         </div>
                     </div>
 
@@ -33,9 +32,9 @@ const Topbar: React.FC<TopbarProps> = ({}) => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <Button onClick={() => {}}>
-                            Log in
-                        </Button>
+                        <button className="">
+                            <span className="material-icons size-2/3">account_circle</span> Log in
+                        </button>
                     </div>
 
                 </div>
