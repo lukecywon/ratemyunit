@@ -26,8 +26,8 @@ const Topbar: React.FC<TopbarProps> = ({}) => {
                         </div>
                     </div>
 
-                    <div className="flex max-w-md mx-8">
-                        <div className="relative">
+                    <div className="flex sm:min-w-md md:min-w-lg mx-8">
+                        <div className="relative w-full">
                             <SmallSearchBar onSearch={handleSearch} className="rounded-lg h-10 sm:h-12 text-md sm:text-lg"/>
                         </div>
                     </div>
