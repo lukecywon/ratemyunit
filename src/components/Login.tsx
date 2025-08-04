@@ -62,7 +62,7 @@ const Login: React.FC<LoginProps> = ({ isOpen, onClose, initialMode = 'login' })
                     {authMode === 'login' ? "Don't have an account? " : "Already have an account? "}
                     <button
                         onClick={toggleAuthMode}
-                        className="text-primary hover:underline"
+                        className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                     >
                         {authMode === 'login' ? 'Sign up' : 'Log in'}
                     </button>
