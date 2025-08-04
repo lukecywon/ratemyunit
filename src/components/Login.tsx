@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo.tsx";
 
 
@@ -10,6 +10,10 @@ interface LoginProps {
 
 const Login: React.FC<LoginProps> = ({ isOpen, onClose, initialMode = 'login' }) => {
     const [authMode, setAuthMode] = useState<'login' | 'signup'>(initialMode);
+
+    useEffect(() => {
+        setAuthMode(initialMode);
+    }, [initialMode]);
 
     const toggleAuthMode = () => {
         setAuthMode(authMode === 'login' ? 'signup' : 'login');
