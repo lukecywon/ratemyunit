@@ -41,9 +41,8 @@ const StyledWrapper = styled.div`
     height: 30px;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
