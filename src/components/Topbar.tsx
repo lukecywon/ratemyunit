@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Logo from "./Logo.tsx";
 import SmallSearchBar from "./SmallSearchBar.tsx";
 import Login from "./Login.tsx";
+import Button from "./Button.tsx";
 
 const handleSearch = (query: string) => {
     console.log('Searching for units or reviews:', query);
@@ -39,20 +40,20 @@ const Topbar: React.FC = () => {
                         </div>
 
                         <div className="flex items-center gap-4">
-                            <button
+                            <Button
                                 onClick={() => handleAuthClick('signup')}
-                                className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                                className=" bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
                             >
                                 {/* Changes in the new few lines */}
                                 Sign up
-                            </button>
-                            <button
+                            </Button>
+                            <Button
                                 onClick={() => handleAuthClick('login')}
                                 className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-colors flex items-center gap-2"
                             >
                                 <span className="material-icons">account_circle</span>
                                 <span className="hidden md:block">Log in</span>
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
