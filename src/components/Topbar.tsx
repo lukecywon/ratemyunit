@@ -20,7 +20,7 @@ const Topbar: React.FC = () => {
 
     return (
         <>
-            <header className="flex flex-row absolute top-0 w-full h-22 border-b bg-card shadow-sm">
+            <header className="flex flex-row absolute top-0 w-full h-24 border-b bg-card shadow-sm">
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
@@ -39,17 +39,17 @@ const Topbar: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-4">
+                        <div className="flex ml-auto gap-4">
                             <Button
                                 onClick={() => handleAuthClick('signup')}
-                                className=" bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                                className="px-4 py-2 text-secondary-foreground rounded-lg transition-colors"
                             >
                                 {/* Changes in the new few lines */}
                                 Sign up
                             </Button>
                             <Button
                                 onClick={() => handleAuthClick('login')}
-                                className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-colors flex items-center gap-2"
+                                className="px-4 py-2 text-secondary-foreground rounded-lg transition-colors flex items-center gap-2"
                             >
                                 <span className="material-icons">account_circle</span>
                                 <span className="hidden md:block">Log in</span>

@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/sidebar.css';
 import SideBarSearch from "./SidebarSearch.tsx";
 import CustomDropdown from "./Dropdown.tsx";
+import Slider from "./Slider.tsx";
 
 
 
@@ -31,7 +32,7 @@ const FilterCard: React.FC = () => {
 
             <h1 className="text-l font-bold mb-4">Search</h1>
             <div className="dropdown mb-4">
-                <SideBarSearch className= "rounded-lg h-10 sm:h-12 sm:w-max text-md sm:text-lg" onSearch={handleSearch} placeholder="Search units or reviews..."/>
+                <SideBarSearch className= "w-full rounded-lg h-10 sm:h-12 text-md sm:text-lg" onSearch={handleSearch} placeholder="Search units or reviews..."/>
             </div>
 
             <div>
@@ -40,6 +41,11 @@ const FilterCard: React.FC = () => {
 
                 <h1>Level</h1>
                 <CustomDropdown options={level} placeholder="All levels" />
+            </div>
+
+            <div>
+                <h1 className="py-3">Minimum Rating</h1>
+                <Slider></Slider>
             </div>
         </div>
     )
