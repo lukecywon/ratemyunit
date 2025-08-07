@@ -67,7 +67,6 @@ const StyledWrapper = styled.div`
     padding: 1rem;
     border-radius: 6px;
     border: 1px solid #C6CACE;
-    box-shadow: 0px 2px 2px 0px #1F1E241F;
   }
 
   .PB-range-slidervalue {

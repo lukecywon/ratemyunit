@@ -18,7 +18,7 @@ export default function CustomDropdown({
                 options={options}
                 optionLabel="name"
                 placeholder={placeholder}
-                className="w-full md:w-full h-12 py-2.5 px-4 rounded-lg shadow-lg border border-gray-200 transition-colors duration-300 hover:bg-gray-200"
+                className="bg-gray-200 w-full md:w-full h-12 py-2.5 px-4 rounded-lg border border-gray-300 transition-colors duration-300 hover:bg-gray-300"
                 panelClassName="w-max md:w-max py-2.5 px-4 bg-white shadow-lg text-sm rounded-md border border-gray-300 overflow-auto"
                 itemTemplate={(option) => (
                     <div className="px-3 py-2 hover:bg-gray-100 rounded-md cursor-pointer transition">
