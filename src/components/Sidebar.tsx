@@ -11,7 +11,7 @@ const FilterCard: React.FC = () => {
         {name: "All faculties"},
         {name: "School of IT"},
         {name: "School of Engineering"},
-        {name: "School of Buisiness"},
+        {name: "School of Business"},
         {name: "School of Medical Health and Science"},
         {name: "School of Science"}
     ]
