@@ -33,7 +33,7 @@ const FilterCard: React.FC = () => {
 
             <h1 className="text-l font-bold mb-4">Search</h1>
             <div className="dropdown mb-4">
-                <SideBarSearch className= "w-full rounded-lg h-10 sm:h-12 text-md sm:text-lg" onSearch={handleSearch} placeholder="Search units or reviews..."/>
+                <SideBarSearch className= "w-full rounded-lg h-10 sm:h-12 text-md sm:text-lg font-sans " onSearch={handleSearch} placeholder="Search units or reviews..."/>
             </div>
 
             <div>

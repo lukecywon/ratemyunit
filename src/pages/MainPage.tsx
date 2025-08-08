@@ -1,15 +1,15 @@
 import '../styles/landing.css';
 import Topbar from "../components/Topbar.tsx";
 import FilterCard from "../components/Sidebar.tsx";
-import '../styles/mainpage.css'
 import {PanelLeftClose, PanelRightClose} from "lucide-react";
 import {useState} from "react";
+import UnitCard from "../components/UnitCard.tsx";
 
 function MainPage() {
     const [isSidebarOpen, setSidebarOpen] = useState(true);
 
     return (
-            <div className="background relative flex flex-col min-h-screen">
+            <div className="background absolute top-0 left-0 w-full h-full min-h-screen">
                 <Topbar />
 
                 {/* Sidebar Container */}
@@ -36,6 +36,11 @@ function MainPage() {
                             <PanelRightClose className="w-5 h-5" />
                         </button>
                     )}
+                <div className="fixed top-36 left-1/2">
+                    <div className="bg-white shadow-lg rounded-lg p-6 w-full">
+                        <UnitCard />
+                    </div>
+                </div>
             </div>
     )
 }

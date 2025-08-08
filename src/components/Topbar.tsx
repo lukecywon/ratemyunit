@@ -28,14 +28,14 @@ const Topbar: React.FC = () => {
                                 <Logo />
                             </div>
                             <div>
-                                <h1 className="hidden md:block md:text-xl font-medium text-foreground font-serif">ratemyunit</h1>
-                                <p className="hidden md:block md:text-sm text-muted-foreground font-mono">University Unit Reviews</p>
+                                <h1 className="hidden md:block md:text-xl font-medium text-foreground">RateMyUnit</h1>
+                                <p className="hidden md:block md:text-sm text-muted-foreground">University Unit Reviews</p>
                             </div>
                         </div>
 
                         <div className="flex sm:min-w-md md:min-w-lg mx-8">
                             <div className="relative w-full">
-                                <SmallSearchBar onSearch={handleSearch} className="rounded-lg h-10 sm:h-12 text-md sm:text-lg"/>
+                                <SmallSearchBar onSearch={handleSearch} className="font-sans rounded-lg h-10 sm:h-12 text-md sm:text-lg"/>
                             </div>
                         </div>
 

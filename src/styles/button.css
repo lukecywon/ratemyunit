@@ -2,14 +2,16 @@
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: white;
-    background-color: dimgray;
-    border: none;
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid black;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .custom-button:hover {
+    color: white;
     background-color: black;
+    border: 1px solid white;
 }
