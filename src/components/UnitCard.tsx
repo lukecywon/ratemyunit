@@ -29,7 +29,6 @@ const StyledWrapper = styled.div`
   .card {
     box-sizing: border-box;
       width: 100%;
-      max-width: 500px;
     height: 30px;
     background: rgba(217, 217, 217, 0.58);
     border: 1px solid white;

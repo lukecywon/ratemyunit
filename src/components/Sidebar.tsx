@@ -28,7 +28,7 @@ const FilterCard: React.FC = () => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 mt-3">
+        <div className="bg-white rounded-lg shadow-md p-6">
             <h1 className="text-xl font-bold mb-4">Filters</h1>
 
             <h1 className="text-l font-bold mb-4">Search</h1>
