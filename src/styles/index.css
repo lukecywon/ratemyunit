@@ -134,6 +134,7 @@
 /**
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
+/*
 @layer base {
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
@@ -192,10 +193,11 @@
       font-family: var(--font-mono), ui-monospace;
     }
   }
-}
+}*/
 
 html {
   font-size: var(--font-size);
+  font-family: 'Inter', sans-serif;
 }
 
 .material-icons {
