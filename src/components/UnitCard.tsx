@@ -17,7 +17,7 @@ const UnitCard: React.FC<ButtonProps> = ({children, onClick, className}) => {
                 <button className={`custom-button ${className || ''}`} onClick={onClick}>
                     {children}
                 </button>
-                <div className="absolute top-2 right-5">
+                <div className="relative top-2 right-5">
                     <CustomDropdown options={filters} placeholder="Highest Rated" />
                 </div>
             </div>

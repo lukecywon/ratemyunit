@@ -34,7 +34,7 @@ const Login: React.FC<LoginProps> = ({ isOpen, onClose, initialMode = 'login' })
                         <div className="flex items-center justify--center w-8 h-8 bg-primary rounded-lg">
                             <Logo />
                         </div>
-                        <h2 className="text-xl font-semibold">
+                        <h2 className="text-xl font-sans">
                             {authMode === 'login' ? 'Log in' : 'Sign up'}
                         </h2>
                     </div>
@@ -67,7 +67,7 @@ const Login: React.FC<LoginProps> = ({ isOpen, onClose, initialMode = 'login' })
                     {authMode === 'login' ? "Don't have an account? " : "Already have an account? "}
                     <button
                         onClick={toggleAuthMode}
-                        className="text-gray-600 hover:text-gray-800 hover:underline font-medium"
+                        className="text-gray-600 hover:text-gray-800 hover:underline font-sans"
                     >
                         {authMode === 'login' ? 'Sign up' : 'Log in'}
                     </button>
