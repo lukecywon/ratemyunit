@@ -4,9 +4,17 @@ import FilterCard from "../components/Sidebar.tsx";
 import {PanelLeftClose, PanelRightClose} from "lucide-react";
 import {useState} from "react";
 import UnitCard from "../components/UnitCard.tsx";
+import CustomDropdown from "../components/Dropdown.tsx";
 
 function MainPage() {
     const [isSidebarOpen, setSidebarOpen] = useState(true);
+    const filters = [
+        {name: "Highest Rated"},
+        {name: "Most Reviews"},
+        {name: "Name"},
+        {name: "Unit Code"}
+    ]
+    const unitCount = 1; /* Temp value */
 
     return (
             <div className="background absolute top-0 left-0 w-full h-full min-h-screen">
@@ -42,7 +50,19 @@ function MainPage() {
                     {/* Unit Cards */}
                     <div className="flex-3 w-full p-6">
                         <div className="bg-white shadow-md rounded-lg p-6 w-full">
-                            <h1 className="text-xl font-bold mb-4">University Units</h1>
+                            {/* Header Section */}
+                            <div className="flex flex-row pb-6">
+                                <div className="flex-1">
+                                    <h1 className="text-xl font-bold">University Units</h1>
+                                    <p className="text-xs text-gray-500">{ unitCount } { unitCount > 1 ? 'units' : 'unit' } found</p>
+                                </div>
+                                <div className="flex-3">
+                                </div>
+                                <div className="flex-1">
+                                    <CustomDropdown options={filters} placeholder="Highest Rated" />
+                                </div>
+                            </div>
+
                             <UnitCard />
                         </div>
                     </div>

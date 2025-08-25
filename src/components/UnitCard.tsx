@@ -1,25 +1,15 @@
 import styled from 'styled-components';
 import type {ButtonProps} from "primereact/button";
-import CustomDropdown from "./Dropdown.tsx";
 
 
 const UnitCard: React.FC<ButtonProps> = ({children, onClick, className}) => {
-    const filters = [
-        {name: "Highest Rated"},
-        {name: "Most Reviews"},
-        {name: "Name"},
-        {name: "Unit Code"}
-    ]
-
     return (
         <StyledWrapper>
             <div className="card">
                 <button className={`custom-button ${className || ''}`} onClick={onClick}>
                     {children}
                 </button>
-                <div className="relative top-2 right-5">
-                    <CustomDropdown options={filters} placeholder="Highest Rated" />
-                </div>
+
             </div>
         </StyledWrapper>
     );
@@ -30,8 +20,8 @@ const StyledWrapper = styled.div`
     box-sizing: border-box;
       width: 100%;
     height: 30px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
+    background: white;
+    border: 1px solid rgba(217, 217, 217, 0.58);
     backdrop-filter: blur(4px);
     border-radius: 10px;
     text-align: center;

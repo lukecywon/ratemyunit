@@ -11,7 +11,7 @@ export default function CustomDropdown({
     const [selected, setSelected] = useState(null);
 
     return (
-        <div className="w-full flex flex-col py-5">
+        <div className="w-full flex flex-col">
             <Dropdown
                 value={selected}
                 onChange={(e) => setSelected(e.value)}
