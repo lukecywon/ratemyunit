@@ -32,20 +32,20 @@ const FilterCard: React.FC = () => {
             <h1 className="text-xl font-bold mb-4">Filters</h1>
 
             <h1 className="text-l font-bold mb-4">Search</h1>
-            <div className="dropdown mb-4">
+            <div className="dropdown">
                 <SideBarSearch className= "w-full rounded-lg h-10 sm:h-12 text-md sm:text-lg font-sans " onSearch={handleSearch} placeholder="Search units or reviews..."/>
             </div>
 
             <div>
-                <h1>Faculty</h1>
+                <h1 className="py-4">Faculty</h1>
                 <CustomDropdown options={faculties} placeholder="All faculties" />
 
-                <h1>Level</h1>
+                <h1 className="py-4">Level</h1>
                 <CustomDropdown options={level} placeholder="All levels" />
             </div>
 
             <div>
-                <h1 className="py-3">Minimum Rating</h1>
+                <h1 className="py-4">Minimum Rating</h1>
                 <Slider></Slider>
             </div>
         </div>

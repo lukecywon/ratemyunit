@@ -20,7 +20,7 @@ const Topbar: React.FC = () => {
 
     return (
         <>
-            <header className="flex flex-row absolute top-0 w-full h-24 border-b bg-card shadow-sm">
+            <header className="absolute top-0 left-0 w-full h-24 border-b bg-card shadow-sm overflow-hidden">
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">

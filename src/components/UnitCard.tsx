@@ -38,11 +38,11 @@ const StyledWrapper = styled.div`
   .card:hover {
     border: 1px solid black;
       background: lightgrey;
-    transform: scale(1.05);
+    transform: scale(1);
   }
 
   .card:active {
-    transform: scale(0.95) rotateZ(1.7deg);
+    transform: scale(0.95);
   }`;
 
 export default UnitCard;
